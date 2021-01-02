@@ -1,3 +1,5 @@
+<?php require_once("auth.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,20 +20,17 @@
     </script>
 
     <script src="https://kit.fontawesome.com/37f7f7be15.js" crossorigin="anonymous"></script>
-	<!-- css files -->
-    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
-    <link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
-    <link href="css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<!-- //css files -->
-
 	  <link href="css/css_slider.css" type="text/css" rel="stylesheet" media="all">
 
-	<!-- google fonts -->
+
     <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
 	  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-	<!-- //google fonts -->
+
 
 </head>
 <body>
@@ -45,8 +44,7 @@
 			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
 			<input type="checkbox" id="drop" />
 			<ul class="menu mt-lg-3 ml-auto">
-        <li class=""><span><span class="fa fa-user"></span><a href="#"> Daftar</a></span></li>
-				<li class=""><span><span class=""></span><a href="#"> Login</a></span></li>
+        <li class=""><span><span class="fa fa-user"></span><a href="logout.php"> Logout</a></span></li>
 			</ul>
 		</nav>
 		<!-- //nav -->
