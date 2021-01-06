@@ -46,7 +46,7 @@
 			<input type="checkbox" id="drop" />
 			<ul class="menu mt-lg-3 ml-auto">
         <li class=""><span><span class="fa fa-user"></span><a href="login.php"> Login</a></span></li>
-        <li class=""><span><span class="fa fa-user"></span><a href="login.php"> Daftar</a></span></li>
+        <li class=""><span><span class="fa fa-user"></span><a href="daftar.php"> Daftar</a></span></li>
 			</ul>
 		</nav>
 		<!-- //nav -->
