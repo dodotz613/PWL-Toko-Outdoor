@@ -1,14 +1,21 @@
 <?php
 
-$host = "localhost";
-$user = "root";
-$password = "";
-$dbname = "alatgunung";
-$conn = mysqli_connect($host, $user, $password, $dbname);
+$db_host = "localhost";
+$db_user = "root";
+$db_pass = "";
+$db_name = "alatgunung";
 
-if(!$conn){
-	die("error in connection");
+try {
+    //create PDO connection
+    $db = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user);
+} catch(PDOException $e) {
+    //show error
+    die("Terjadi masalah: " . $e->getMessage());
 }
 
-//echo "database connected"
+$con = mysqli_connect("localhost","root","","alatgunung");
+	if (mysqli_connect_errno()){
+		echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		die();
+		}
 ?>
