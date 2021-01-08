@@ -62,11 +62,12 @@ if(empty($_SESSION["shopping_cart"])) {
   </head>
   <body>
 
+
   <div class="site-wrap">
     <div class="bg-light py-3">
       <div class="container">
         <div class="cart_div">
-        <a href="cart.php"><img src="images/cart-icon.png" /> Cart<span><?php echo $cart_count; ?></span></a>
+        <a href="cart.php"><img src="images/cart-icon.png" /> Cart</a>
         </div>
         <div class="row">
           <div class="col-md-12 mb-0"><a href="index.php">Home</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Gear</strong></div>
@@ -77,12 +78,7 @@ if(empty($_SESSION["shopping_cart"])) {
 
 
 <?php
-if(!empty($_SESSION["shopping_cart"])) {
-$cart_count = count(array_keys($_SESSION["shopping_cart"]));
-?>
 
-<?php
-}
 
 $result = mysqli_query($con,"SELECT * FROM `product2`");
 while($row = mysqli_fetch_assoc($result)){
