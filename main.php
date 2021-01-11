@@ -88,44 +88,46 @@
                     <div class="row fetured-sec mt-lg-5">
 
 
-                            <div class="featured-center text-center row">
-                                <div class="col-sm-6">
-                                    <div class="bottom-gd fea">
-                                        <span class="fas fa-shoe-prints" aria-hidden="true"></span>
-                                        <h3 class="my-3">Footwear</h3>
-                                        <p class="px-lg-3">Mountain boots for hiking gear</p>
-                                        <br/>
-                                        <a href="footwear.php" class="btn btn-success btn-md">Shop Now</a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="bottom-gd fea">
-                                        <span class="fa fa-diagnoses" aria-hidden="true"></span>
-                                        <h3 class="my-3">Moutain Jacket</h3>
-                                        <p class="px-lg-3">Mountain jacket for hiking gear</p>
-                                        <br/>
-                                        <a href="jacket.php" class="btn btn-success btn-md">Shop Now</a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="bottom-gd fea">
-                                        <span class="fa fa-gear" aria-hidden="true"></span>
-                                        <h3 class="my-3">Mountain Gear</h3>
-                                        <p class="px-lg-3">Mountaineering gear for hiking needed</p>
-                                        <br/>
-                                        <a href="gear.php" class="btn btn-success btn-md">Shop Now</a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="bottom-gd fea">
-                                        <span class="fas fa-suitcase" aria-hidden="true"></span>
-                                        <h3 class="my-3">Carrier</h3>
-                                        <p class="px-lg-3">Mountaineering rucksack bag for hiking needed</p>
-                                        <br/>
-                                        <a href="carrier.php" class="btn btn-success btn-md">Shop Now</a>
-                                    </div>
-                                </div>
-                            </div>
+                      <div class="featured-center text-center row">
+                          <div class="col-sm-6">
+                              <div class="bottom-gd fea">
+                                  <span class="fas fa-suitcase" aria-hidden="true"></span>
+                                  <h3 class="my-3">Carrier</h3>
+                                  <p class="px-lg-3">Mountaineering rucksack bag for hiking needed</p>
+                                  <br/>
+                                  <a href="carrier.php" class="btn btn-success btn-md">Shop Now</a>
+                              </div>
+                          </div>
+                          <div class="col-sm-6">
+                              <div class="bottom-gd fea">
+                                  <span class="fa fa-diagnoses" aria-hidden="true"></span>
+                                  <h3 class="my-3">Moutain Jacket</h3>
+                                  <p class="px-lg-3">Mountain jacket for hiking gear</p>
+                                  <br/>
+                                  <a href="jacket.php" class="btn btn-success btn-md">Shop Now</a>
+                              </div>
+                          </div>
+                          <div class="col-sm-6">
+                              <div class="bottom-gd fea">
+                                  <span class="fa fa-gear" aria-hidden="true"></span>
+                                  <h3 class="my-3">Mountain Gear</h3>
+                                  <p class="px-lg-3">Mountaineering gear for hiking needed</p>
+                                  <br/>
+                                  <a href="gear.php" class="btn btn-success btn-md">Shop Now</a>
+                              </div>
+                          </div>
+                          <div class="col-sm-6">
+                              <div class="bottom-gd fea">
+                                  <span class="fas fa-shoe-prints" aria-hidden="true"></span>
+                                  <h3 class="my-3">Footwear</h3>
+                                  <p class="px-lg-3">Mountain boots for hiking gear</p>
+                                  <br/>
+                                  <a href="footwear.php" class="btn btn-success btn-md">Shop Now</a>
+                              </div>
+                          </div>
+                      </div>
+
+
                         </div>
                     </div>
                 </div>
