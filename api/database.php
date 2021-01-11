@@ -12,7 +12,7 @@ class Database {
         $this->host = "localhost";
         $this->username = "root";
         $this->password = "";
-        $this->db_name = "tokooutdoor";
+        $this->db_name = "alatgunung";
     }
     function getConnection() {
         $this->conn = null;
