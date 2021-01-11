@@ -3,24 +3,24 @@
 include "database.php";
 // mengambil metode request
 $request_method = $_SERVER["REQUEST_METHOD"];
-$produk = new Product();
+$product = new Product();
 
 if($request_method == 'GET') {
-    if(isset($_GET['id_product'])) {
-        $produk->get_products(null,
-            $_GET['id_product']);
+    if(isset($_GET['id'])) {
+        $product->get_products(null,
+            $_GET['id']);
     } else {
-        $produk->get_products();
+        $product->get_products();
     }
 } else if($request_method == 'POST') {
-    $produk->add_product($_POST['ID'],
-        $_POST['nama']);
+    $product->add_product($_POST['ID'],
+        $_POST['name']);
 } else if($request_method == 'PUT') {
     parse_str(file_get_contents("php://input"),$post_vars);
-    $produk->put_product($_GET['id_product'], $post_vars['nama'], $post_vars['stok'],
-    $post_vars['modal'], $post_vars['jual']);
+    $product->put_product($_GET['id'], $post_vars['name'], $post_vars['code'],
+    $post_vars['price']);
 } else if($request_method == 'DELETE') {
-    $produk->del_product($_GET['id_product']);
+    $product->del_product($_GET['id']);
 }
 
 // deklarasi kelas produk
@@ -28,18 +28,16 @@ class Product {
     // atribut
     private $ID;
     private $img;
-    private $nama;
-    private $stok;
-    private $modal;
-    private $jual;
+    private $name;
+    private $code;
+    private $price;
     public $conn;
 
     function __construct() {
         $this->ID = "";
-        $this->nama = "";
-        $this->stok = 0;
-        $this->modal = 0;
-        $this->jual = 0;
+        $this->name = "";
+        $this->code = 0;
+        $this->price = 0;
         $this->conn = new Database();
         $this->conn->getConnection();
     }
@@ -74,9 +72,9 @@ class Product {
          echo json_encode($respon);
     }
 
-    public function add_product($ID, $nama) {
+    public function add_product($ID, $name) {
         $query = "INSERT INTO product (ID, Nama)
-        VALUES ('$ID', '$nama')";
+        VALUES ('$ID', '$name')";
         if($this->conn->conn->query($query)) {
             $respon = array(
                 'status' => 1,
@@ -95,8 +93,8 @@ class Product {
         echo json_encode($respon);
     }
 
-    public function put_product($ID, $nama, $stok, $modal, $jual) {
-        $query = "UPDATE product SET nama = '$nama', stok=$stok, modal='$modal', jual='$jual'
+    public function put_product($ID, $name, $code, $price) {
+        $query = "UPDATE product SET nama = '$name', code=$code, price='$price'
                   WHERE ID = '$ID'";
 
         if($this->conn->conn->query($query)) {
