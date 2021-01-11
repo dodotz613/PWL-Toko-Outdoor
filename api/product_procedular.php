@@ -18,24 +18,24 @@ if($request_method == "GET") {
     if(!empty($_GET["kategori"])) {
         $kategori = $_GET["kategori"];
         get_product($kategori);
-    } else if(!empty($_GET["id_produk"])) {
+    } else if(!empty($_GET["id"])) {
         $kategori = $_GET["kategori"];
-        $id_produk = $_GET["id_produk"];
-        get_product($kategori, $id_produk);
+        $id = $_GET["id"];
+        get_product($kategori, $id);
     } else {
         get_products($conn);
     }
 
 }
 
-function get_products($conn, $kategori = null, $id_produk = 0) {
+function get_products($conn, $kategori = null, $id = 0) {
     // if ($conn->conn->connect_errno) {
     //     printf("Connect failed: %s\n", $mysqli->connect_error);
     //     exit();
     // }
 
     // ambil semua produk
-    $query = "SELECT * FROM produk";
+    $query = "SELECT * FROM product";
     $result = $conn->conn->query($query);
     $respon = array();
 
