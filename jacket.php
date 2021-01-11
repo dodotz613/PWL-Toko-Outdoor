@@ -70,7 +70,7 @@ if(empty($_SESSION["shopping_cart"])) {
         <a href="cart.php"><img src="images/cart-icon.png" /> Cart</a>
         </div>
         <div class="row">
-          <div class="col-md-12 mb-0"><a href="index.php">Home</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Gear</strong></div>
+          <div class="col-md-12 mb-0"><a href="index.php">Home</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Jaket</strong></div>
         </div>
       </div>
     </div>
